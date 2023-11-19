@@ -1,7 +1,7 @@
 // Class to encapsulate application-related constants
 class AppConstants {
-    // Defining the PORT number (3000)
-    static PORT = 3000;
+    // Defining the PORT number (8000)
+    static PORT = 8000;
 
     // Defining Request Successful message
     static SUCCESSMESSAGE = "Successful";
