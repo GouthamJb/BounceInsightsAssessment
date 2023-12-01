@@ -6,9 +6,6 @@
   "scripts": {
     "dev": "concurrently \"npm install && node app.js\" \"cd ../client && npm install && npm start\""
   },
-  "engines": {
-    "node": "18.x"
-  },
   "author": "Goutham J B",
   "license": "ISC",
   "dependencies": {
