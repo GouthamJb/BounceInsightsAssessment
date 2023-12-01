@@ -10,7 +10,7 @@ export const countryDetails = createAsyncThunk(
   "country",
   async (country, { rejectWithValue }) => {
     try {
-      console.log(process.env.STAGE)
+      console.log(process.env.REACT_APP_STAGE)
       const response = await fetch(`${BASE_URL}?name=${country}`, {
         headers: {
           "Access-Control-Allow-Origin": "*",
