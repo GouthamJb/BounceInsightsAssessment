@@ -1,6 +1,6 @@
-# MERN Stack Project
+# Full-Stack JavaScript Project
 
-This is a MERN (MongoDB, Express.js, React, Node.js) stack project template.
+This is a full-stack JavaScript project template utilizing Express.js for the server and React for the client.
 
 ## Prerequisites
 
