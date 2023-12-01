@@ -13,7 +13,7 @@ class AppConstants {
     static DEFAULTERRORMESSAGE = "Oops! Something went wrong. Please try again later or contact support for assistance.";
 
     // Defining missing arguments error message
-    static MISSINGPARAMERRORMESSAGE = "The request is missing the required parameter 'name'. Please make sure to include the necessary information and try again.";
+    static MISSINGPARAMERRORMESSAGE = "Please provide a country name.";
 }
 
 // Export the AppConstants class

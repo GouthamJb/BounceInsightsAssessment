@@ -10,6 +10,8 @@ const SearchComponent = () => {
   const handleSearch = () => {
     clearMessage();
     dispatch(countryDetails(searchText));
+    setSearchText("");
+   
   };
 
   return (
@@ -19,6 +21,12 @@ const SearchComponent = () => {
         placeholder="Enter country name"
         value={searchText}
         onChange={(e) => setSearchText(e.target.value)}
+        onKeyDown={(e) => {
+          if (e.key === 'Enter') {
+            e.preventDefault(); // Prevents the default behavior of the Enter key (e.g., submitting a form)
+            handleSearch();
+          }
+        }}
         className="search-input"
       />
       <button onClick={handleSearch} className="search-button">
