@@ -2,9 +2,9 @@
   "name": "bounce-coding-challenge",
   "version": "1.0.0",
   "description": "Assessment",
-  "main": "app.js",
+  "main": "index.js",
   "scripts": {
-    "dev": "concurrently \"npm install && node app.js\" \"cd ../client && npm install && npm start\""
+    "dev": "concurrently \"npm install && node index.js\" \"cd ../client && npm install && npm start\""
   },
   "author": "Goutham J B",
   "license": "ISC",
