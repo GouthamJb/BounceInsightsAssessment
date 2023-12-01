@@ -1,6 +1,6 @@
 let BASE_URL;
 
-if (process.env.VERCEL_ENV === 'production') {
+if (process.env.STAGE == 'production') {
   // Deployed URL
   BASE_URL = "https://bounce-insights-assessment.vercel.app/api/country";
 } else {
