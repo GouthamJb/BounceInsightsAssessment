@@ -13,20 +13,20 @@ const NationalInsigniaComponent = ({ data }) => {
                 <div style={{ padding: "16px" }}>
                     {/* Displaying the country flag */}
                     <Card.Text>
-                        <b>Flag: </b>{data.flag}
+                        <b>Flag: </b>{data?.flag}
                     </Card.Text>
                     {/* Displaying the country flag image */}
-                    <img src={data.flags.png} alt={data.flags.alt}style={{maxWidth: "100px", maxHeight: "100px"}}></img>
+                    <img src={data?.flags.png} alt={data?.flags.alt}style={{maxWidth: "100px", maxHeight: "100px"}}></img>
                     {/* Displaying additional information about the country flag */}
                     <Card.Text>
-                        {data.flags.alt}
+                        {data?.flags.alt}
                     </Card.Text>
                     {/* Displaying the country coat of arms image */}
-                    <div><img src={data.coatOfArms.png} alt="coatOfArms" style={{maxWidth: "100px", maxHeight: "100px"}}></img></div>
+                    <div><img src={data?.coatOfArms.png} alt="coatOfArms" style={{maxWidth: "100px", maxHeight: "100px"}}></img></div>
                     {/* Displaying a link to Google Maps view */}
-                    <div><a href={data.maps.googleMaps}>Google Map View</a></div>
+                    <div><a href={data?.maps.googleMaps}>Google Map View</a></div>
                     {/* Displaying a link to Open Street Map view */}
-                    <div><a href={data.maps.openStreetMaps}>Open Street Map View</a></div>
+                    <div><a href={data?.maps.openStreetMaps}>Open Street Map View</a></div>
                 </div>
             </Card.Body>
         </Card>

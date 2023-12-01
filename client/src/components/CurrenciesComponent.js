@@ -21,8 +21,8 @@ const CurrenciesComponent = ({ data }) => {
                                     <Card.Text><b>{key}</b></Card.Text>
                                     <ul>
                                         {/* Displaying currency name and symbol */}
-                                        <li><Card.Text>Name: {data[key].name}</Card.Text></li>
-                                        <li><Card.Text>Symbol: {data[key].symbol}</Card.Text></li>
+                                        <li><Card.Text>Name: {data?.[key].name}</Card.Text></li>
+                                        <li><Card.Text>Symbol: {data?.[key].symbol}</Card.Text></li>
                                     </ul>
                                 </li>
                             ))}

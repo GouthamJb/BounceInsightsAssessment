@@ -12,15 +12,15 @@ const CountryStatusComponent = ({ data }) => {
                 <Card.Header><Card.Title>Country Status</Card.Title></Card.Header>
                 <div style={{ padding: "16px" }}>
                     {/* Displaying independent status with a checkmark or cross */}
-                    {data.independent ? (
+                    {data?.independent ? (
                         <Card.Text><b>Independent: </b>✔</Card.Text>
                     ) : (
                         <Card.Text><b>Independent: </b>✘</Card.Text>
                     )}
                     {/* Displaying the status */}
-                    <Card.Text><b>Status: </b>{data.status}</Card.Text>
+                    <Card.Text><b>Status: </b>{data?.status}</Card.Text>
                     {/* Displaying UN Member status with a checkmark or cross */}
-                    {data.unMember ? (
+                    {data?.unMember ? (
                         <Card.Text><b>UN Member: </b>✔</Card.Text>
                     ) : (
                         <Card.Text><b>UN Member: </b>✘</Card.Text>

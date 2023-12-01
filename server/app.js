@@ -1,3 +1,5 @@
+// Importing the 'cors' module
+const cors = require('cors');
 // Importing the 'express' module
 const express = require('express');
 // Importing the 'routes' module
@@ -7,7 +9,8 @@ const AppConstants = require('./constants/appconstants');
 
 // Express Object
 const app = express();
-
+//cors configuration
+app.use(cors());
 // Handle Routes
 app.use('/api/', routes)
 

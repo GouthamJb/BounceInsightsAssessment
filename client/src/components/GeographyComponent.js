@@ -13,16 +13,16 @@ const GeographyComponent = ({ data }) => {
                 <div style={{ padding: "16px" }}>
                     {/* Displaying the region */}
                     <Card.Text>
-                        <b>Region: </b>{data.region}
+                        <b>Region: </b>{data?.region}
                     </Card.Text>
                     {/* Displaying the subregion */}
                     <Card.Text>
-                        <b>Sub-Region: </b>{data.subregion}
+                        <b>Sub-Region: </b>{data?.subregion}
                     </Card.Text>
                     <Card.Text>
-                        <b>Latitude-Longitude: </b>{data.latlng[0]} lat, {data.latlng[1]} long 
+                        <b>Latitude-Longitude: </b>{data?.latlng[0]} lat, {data?.latlng[1]} long 
                     </Card.Text>
-                    {data.landlocked ? (
+                    {data?.landlocked ? (
                         <Card.Text><b>Land-Locked: </b>✔</Card.Text>
                     ) : (
                         <Card.Text><b>Land-Locked: </b>✘</Card.Text>
@@ -30,7 +30,7 @@ const GeographyComponent = ({ data }) => {
                      <Card.Text><b>Borders: </b></Card.Text>
                     <ul>
                         {/* Mapping through each capital and rendering it */}
-                        {data.borders.map((e, index) => (
+                        {data?.borders?.map((e, index) => (
                             <li key={index}>
                                 {/* Displaying each capital */}
                                 <Card.Text>{e}</Card.Text>
@@ -38,12 +38,12 @@ const GeographyComponent = ({ data }) => {
                         ))}
                     </ul>
                     <Card.Text>
-                        <b>Area: </b>{data.area} sq.km 
+                        <b>Area: </b>{data?.area} sq.km 
                     </Card.Text>
                     <Card.Text><b>Continents: </b></Card.Text>
                     <ul>
                         {/* Mapping through each continent and rendering it */}
-                        {data.continents.map((e, index) => (
+                        {data?.continents?.map((e, index) => (
                             <li key={index}>
                                 {/* Displaying each continent */}
                                 <Card.Text>{e}</Card.Text>

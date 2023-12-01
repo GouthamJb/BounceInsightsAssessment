@@ -14,14 +14,14 @@ const CapitalComponent = ({ data }) => {
                     {/* Displaying capitals in an unordered list */}
                     <ul>
                         {/* Mapping through each capital and rendering it */}
-                        {data.capital.map((e, index) => (
+                        {data?.capital.map((e, index) => (
                             <li key={index}>
                                 {/* Displaying each capital */}
                                 <Card.Text>{e}</Card.Text>
                             </li>
                         ))}
                     </ul>
-                    <Card.Text><b>Latitude-Longitude: </b>{data.capitalInfo.latlng[0]} Lat, {data.capitalInfo.latlng[1]} Long</Card.Text>
+                    <Card.Text><b>Latitude-Longitude: </b>{data?.capitalInfo.latlng[0]} Lat, {data?.capitalInfo.latlng[1]} Long</Card.Text>
                 </div>
             </Card.Body>
         </Card>

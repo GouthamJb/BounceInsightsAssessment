@@ -15,14 +15,14 @@ const TranslationsComponent = ({ data }) => {
                         {/* Displaying translations in an unordered list */}
                         <ul>
                             {/* Mapping through each translation and rendering details */}
-                            {Object.keys(data).map(key => (
+                            {Object.keys(data)?.map(key => (
                                 <li key={key}>
                                     {/* Displaying the language code */}
                                     <Card.Text><b>{key}</b></Card.Text>
                                     <ul>
                                         {/* Displaying translation names */}
-                                        <li><Card.Text>Official: {data[key].official}</Card.Text></li>
-                                        <li><Card.Text>Common: {data[key].common}</Card.Text></li>
+                                        <li><Card.Text>Official: {data?.[key].official}</Card.Text></li>
+                                        <li><Card.Text>Common: {data?.[key].common}</Card.Text></li>
                                     </ul>
                                 </li>
                             ))}

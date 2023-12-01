@@ -18,7 +18,7 @@ const LanguagesComponent = ({ data }) => {
                             {Object.keys(data).map(key => (
                                 <li key={key}>
                                     {/* Displaying the language and its value */}
-                                    <Card.Text><b>{key}: </b>{data[key]}</Card.Text>
+                                    <Card.Text><b>{key}: </b>{data?.[key]}</Card.Text>
                                 </li>
                             ))}
                         </ul>

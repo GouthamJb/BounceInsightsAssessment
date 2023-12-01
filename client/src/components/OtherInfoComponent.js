@@ -12,40 +12,40 @@ const OtherInfoComponent = ({ data }) => {
                 <Card.Header><Card.Title>Other Information[s]</Card.Title></Card.Header>
                 <div style={{ padding: "16px" }}>
                     {/* Displaying population information */}
-                    <Card.Text><b>Population: </b> {data.population}</Card.Text>
+                    <Card.Text><b>Population: </b> {data?.population}</Card.Text>
                     <Card.Text><b>Gini Coefficient: </b></Card.Text>
                     
                         {/* Displaying Gini coefficient details in an unordered list */}
                         <ul>
                             {/* Mapping through each Gini coefficient key and rendering details */}
-                            {Object.keys(data.gini).map(key => (
-                                <li key={key}><Card.Text>{key}: {data.gini[key]}</Card.Text></li>
+                            {Object?.keys(data?.gini)?.map(key => (
+                                <li key={key}><Card.Text>{key}: {data?.gini?.[key]}</Card.Text></li>
                             ))}
                         </ul>
                     
-                    <Card.Text><b>FIFA: </b> {data.fifa}</Card.Text>
+                    <Card.Text><b>FIFA: </b> {data?.fifa}</Card.Text>
                     <Card.Text><b>Timezones: </b></Card.Text>
                     {/* Displaying timezones in an unordered list */}
                     <ul>
                         {/* Mapping through each timezone and rendering it */}
-                        {data.timezones.map((e, index) => (
+                        {data?.timezones?.map((e, index) => (
                             <li key={index}>
                                 {/* Displaying each timezone */}
                                 <Card.Text>{e}</Card.Text>
                             </li>
                         ))}
                     </ul>
-                    <Card.Text><b>Start Of Week: </b> {data.startOfWeek}</Card.Text>
-                    <Card.Text><b>Root: </b>{data.root}</Card.Text>
+                    <Card.Text><b>Start Of Week: </b> {data?.startOfWeek}</Card.Text>
+                    <Card.Text><b>Root: </b>{data?.root}</Card.Text>
                     {/* Displaying car information */}
                     <Card.Text><b>Car: </b></Card.Text>
                     <ul>
-                        <li><Card.Text><b>Side: </b>{data.car.side}</Card.Text></li>
+                        <li><Card.Text><b>Side: </b>{data?.car.side}</Card.Text></li>
                         <li><Card.Text><b>Signs: </b></Card.Text></li>
                         {/* Displaying car signs in an unordered list */}
                         <ul>
                             {/* Mapping through each car sign and rendering it */}
-                            {data.car.signs.map((e, index) => (
+                            {data?.car.signs.map((e, index) => (
                                 <li key={index}>
                                     {/* Displaying each car sign */}
                                     <Card.Text>{e}</Card.Text>
@@ -59,9 +59,9 @@ const OtherInfoComponent = ({ data }) => {
                         <ul>
                             <li>
                                 {/* Displaying postal code format */}
-                                <Card.Text><b>Format: </b>{data.postalCode.format}</Card.Text>
+                                <Card.Text><b>Format: </b>{data?.postalCode?.format}</Card.Text>
                             </li>
-                            <li><Card.Text><b>Regex: </b>{data.postalCode.regex}</Card.Text></li>
+                            <li><Card.Text><b>Regex: </b>{data?.postalCode?.regex}</Card.Text></li>
                         </ul>
                     
                 </div>

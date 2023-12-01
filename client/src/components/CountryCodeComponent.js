@@ -13,13 +13,13 @@ const CountryCodeComponent = ({ data }) => {
                 <div style={{ padding: "16px" }}>
 
                     {/* Displaying Alpha-2 country code */}
-                    <Card.Text><b>Alpha-2 (cca2): </b>{data.cca2}</Card.Text>
+                    <Card.Text><b>Alpha-2 (cca2): </b>{data?.cca2}</Card.Text>
                     {/* Displaying Numeric-3 country code */}
-                    <Card.Text><b>Numeric-3 (ccn3): </b>{data.ccn3}</Card.Text>
+                    <Card.Text><b>Numeric-3 (ccn3): </b>{data?.ccn3}</Card.Text>
                     {/* Displaying Alpha-3 country code */}
-                    <Card.Text><b>Alpha-3 (cca3): </b>{data.cca3}</Card.Text>
+                    <Card.Text><b>Alpha-3 (cca3): </b>{data?.cca3}</Card.Text>
                     {/* Displaying International Olympic Committee Code */}
-                    <Card.Text><b>International Olympic Committee Code (cioc): </b>{data.cioc}</Card.Text>
+                    <Card.Text><b>International Olympic Committee Code (cioc): </b>{data?.cioc}</Card.Text>
 
                 </div>
             </Card.Body>

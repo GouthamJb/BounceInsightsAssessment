@@ -14,7 +14,7 @@ const TLDComponent = ({ data }) => {
                     {/* Displaying TLDs in an unordered list */}
                     <ul>
                         {/* Mapping through each TLD and rendering it */}
-                        {data.map((e, index) => (
+                        {data?.map((e, index) => (
                             <li key={index}>
                                 {/* Displaying each TLD */}
                                 <Card.Text>{e}</Card.Text>

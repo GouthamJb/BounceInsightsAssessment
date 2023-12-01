@@ -1,11 +1,15 @@
-import React, { useState } from 'react';
-import '../styles/SearchComponent.css'; // Import your stylesheet
+import React, { useState } from "react";
+import "../styles/SearchComponent.css"; // Import your stylesheet
+import { useDispatch } from "react-redux";
+import { clearMessage, countryDetails } from "../reducers/CountryReducer";
 
 const SearchComponent = () => {
-  const [searchText, setSearchText] = useState('');
+  const [searchText, setSearchText] = useState("");
+  const dispatch = useDispatch();
 
   const handleSearch = () => {
-    console.log('Search Text:', searchText);
+    clearMessage();
+    dispatch(countryDetails(searchText));
   };
 
   return (

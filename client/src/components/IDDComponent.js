@@ -12,13 +12,13 @@ const IDDComponent = ({ data }) => {
                 <Card.Header><Card.Title>International Dialing Code(IDD)</Card.Title></Card.Header>
                 <div style={{ padding: "16px" }}>
                     {/* Displaying the root IDD */}
-                    <Card.Text><b>Root: </b>{data.root}</Card.Text>
+                    <Card.Text><b>Root: </b>{data?.root}</Card.Text>
                     {/* Displaying a list of IDD suffixes */}
                     <Card.Text><b>Suffixes: </b></Card.Text>
                     {/* Displaying IDD suffixes in an unordered list */}
                     <ul>
                         {/* Mapping through each suffix and rendering it */}
-                        {data.suffixes.map((e, index) => (
+                        {data?.suffixes.map((e, index) => (
                             <li key={index}>
                                 {/* Displaying each suffix */}
                                 <Card.Text>{e}</Card.Text>

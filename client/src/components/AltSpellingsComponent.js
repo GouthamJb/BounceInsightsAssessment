@@ -14,7 +14,7 @@ const AltSpellingComponent = ({ data }) => {
                     {/* Displaying capitals in an unordered list */}
                     <ul>
                         {/* Mapping through each capital and rendering it */}
-                        {data.map((e, index) => (
+                        {data?.map((e, index) => (
                             <li key={index}>
                                 {/* Displaying each capital */}
                                 <Card.Text>{e}</Card.Text>

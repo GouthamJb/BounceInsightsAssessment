@@ -21,8 +21,8 @@ const DemonymsComponent = ({ data }) => {
                                     <Card.Text><b>{key}</b></Card.Text>
                                     <ul>
                                         {/* Displaying demonym names for female and male */}
-                                        <li><Card.Text>Female: {data[key].f}</Card.Text></li>
-                                        <li><Card.Text>Male: {data[key].m}</Card.Text></li>
+                                        <li><Card.Text>Female: {data?.[key].f}</Card.Text></li>
+                                        <li><Card.Text>Male: {data?.[key].m}</Card.Text></li>
                                     </ul>
                                 </li>
                             ))}

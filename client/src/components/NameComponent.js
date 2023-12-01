@@ -13,25 +13,25 @@ const NameComponent = ({ data }) => {
                 <div style={{ padding: "16px" }}>
                     {/* Displaying common name */}
                     <Card.Text>
-                        <b>Common: </b>{data.common}
+                        <b>Common: </b>{data?.common}
                     </Card.Text>
                     {/* Displaying official name */}
                     <Card.Text>
-                        <b>Official: </b>{data.official}
+                        <b>Official: </b>{data?.official}
                     </Card.Text>
                     {/* Displaying native names in an unordered list */}
                     <Card.Text>
                         <b>Native Names:</b></Card.Text>
                         <ul>
                             {/* Mapping through each native name and rendering details */}
-                            {Object.keys(data.nativeName).map(key => (
+                            {Object.keys(data?.nativeName).map(key => (
                                 <li key={key}>
                                     {/* Displaying the native language */}
                                     <Card.Text><b>{key}</b></Card.Text>
                                     <ul>
                                         {/* Displaying common and official names for the native language */}
-                                        <li><Card.Text>Common Name: {data.nativeName[key].common}</Card.Text></li>
-                                        <li><Card.Text>Official Name: {data.nativeName[key].official}</Card.Text></li>
+                                        <li><Card.Text>Common Name: {data?.nativeName[key].common}</Card.Text></li>
+                                        <li><Card.Text>Official Name: {data?.nativeName[key].official}</Card.Text></li>
                                     </ul>
                                 </li>
                             ))}
